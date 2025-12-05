@@ -9,21 +9,26 @@ For more details on the custom instructions and the HBirdv2 E203 processor’s i
 
    https://doc.nucleisys.com/hbirdv2/core/core.html#nice
 
+
 3. Features:
    
    Since the HBirdv2 E203 processor supports four custom instructions, it can control up to four independent coprocessors, with each custom instruction dedicated to a single coprocessor. The generic BIU is configurable and supports variable-length data transmission, allowing data to be read from or written to memory in any number of words per instruction. It also incorporates data buffering to handle scenarios where one side operates faster than the other, and includes data width conversion to match the requirements of both the coprocessor and the memory.
+
    
 4. Block Diagram:
    
    <img width="975" height="624" alt="image" src="https://github.com/user-attachments/assets/73e24442-4fb8-464c-b536-a301accdd9b7" />
 
+
 5. Configurable Parameters:
  
    <img width="2000" height="645" alt="image" src="https://github.com/user-attachments/assets/2599cf63-82f4-467a-b1b4-4348945dc77d" />
 
+
 6. Interface Specification:
  
    <img width="1456" height="1209" alt="image" src="https://github.com/user-attachments/assets/1f5e5fca-d31e-4ceb-a012-a81f40b31fab" />
+
 
 7. Example Operation and Waveforms:
    
