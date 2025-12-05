@@ -1,0 +1,9 @@
+Take dwc_cmd0 as an example.
+
+1. Install Icarus Verilog
+   Make sure Icarus Verilog is installed on your system.
+
+2. Open a terminal in the directory containing your source files and run:
+   iverilog -g2012 -o simv_dwc_cmd0 dwc_cmd0_tb.sv dwc_cmd0.sv
+   vvp .\simv_dwc_cmd0 
+   gtkwave dwc_cmd0_tb.vcd 
