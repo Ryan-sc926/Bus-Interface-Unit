@@ -1,11 +1,12 @@
 # Bus-Interface-Unit
 1. Introduction:
+
    The purpose of this project is to design a generic Bus Interface Unit (BIU) that serves as a bridge between the Hummingbirdv2 E203 RISC-V processor and coprocessors. Any coprocessor that complies with the defined handshake protocol at the BIU–coprocessor interface can be controlled by the HBirdv2 E203 processor through this BIU. 
 The HBirdv2 E203 processor supports four custom instructions, each of which can be defined to perform user-specific operations. In this BIU design, these four custom instructions are dedicated to three functions: Load (fetch data from memory to the coprocessor), Store (write data from the coprocessor to memory), and Write Configuration Register (update configuration registers in the BIU to control coprocessor behavior). 
 For more details on the custom instructions and the HBirdv2 E203 processor’s interaction with coprocessors, refer to: 
 https://github.com/riscv-mcu/e203_hbirdv2 https://doc.nucleisys.com/hbirdv2/core/core.html#nice
 
-2. Features
+3. Features
    Since the HBirdv2 E203 processor supports four custom instructions, it can control up to four independent coprocessors, with each custom instruction dedicated to a single coprocessor. The generic BIU is configurable and supports variable-length data transmission, allowing data to be read from or written to memory in any number of words per instruction. It also incorporates data buffering to handle scenarios where one side operates faster than the other, and includes data width conversion to match the requirements of both the coprocessor and the memory.
    
 4. Block Diagram
