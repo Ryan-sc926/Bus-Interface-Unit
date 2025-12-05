@@ -1,4 +1,4 @@
-Take dwc_cmd0 as an example.
+Take dwc_cmd0 as an example. If you want to test a different module, simply replace the module name in the commands below.
 
 1. Install Icarus Verilog
    Make sure Icarus Verilog is installed on your system.
